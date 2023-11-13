@@ -1,0 +1,128 @@
+* {margin: 0;padding: 0; box-sizing: border-box;}
+
+header.home-page-header {
+    display: flex;
+    border-bottom: 2px solid blue;
+    height: 12vh;
+}
+header.home-page-header > .fi.synopsis ul {
+    display: flex;
+    flex-direction: column;
+}
+header.home-page-header > .fi.synopsis ul {
+    margin-left: 5%;
+}
+.home-page-header > .page-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-page-header > .page-logo img {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    border: 4px solid blue;
+    max-height: 100px;
+}
+
+
+main {
+    padding: 0 2.5%;
+}
+main > header {
+    border: 2px solid black;
+    display: flex;
+    /* margin: 0 2.5%; */
+    /* margin-top: 1%; */
+    align-items: center;
+    padding: 2.5% 3.5%;
+    padding: 1.25%;
+}
+main > header > p {
+    flex-basis: 65%;
+    margin-right: 2.5%;
+}
+
+.topics-container {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5%;
+}
+.topic-container > header {
+    /* font-size: 1.2rem; */
+    padding-left: 2.5%;
+}
+.topics-container > .topic-container {
+    border: 1px solid black;
+    flex-basis: 45%;
+    /* height: 20vh; */
+    margin: .75% 0;
+}
+.topic-container > .topic {
+    width: 100%;
+    
+    /* background-color: grey; */
+}
+.topic-container > .topic > .projects-container{
+    width: 100%;
+}
+.topic-container > .topic > .projects-container > .project {
+    width: 100%;
+}
+.topic-container#myProjects > header,
+.topic-container#documentation > header,
+.topic-container#resources > header{
+    background-color: lightskyblue;
+    border-bottom: 1px solid blue;
+    font-size: 1.02rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.topic-container#myProjects > .topic > .projects-container ,
+.topic-container#resources > .topic > .projects-container {
+    padding: 1% 0;
+    padding-left: 2.5%;
+    display: flex;
+
+}
+.topic-container#resources > .topic > .projects-container > .project {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 1.5% 0;
+    flex-basis: 20%;
+    border: 2px solid blue;
+    /* height: 20vh; */
+}
+.topic-container#myProjects > .topic > .projects-container > .project img,
+.topic-container#resources > .topic > .projects-container > .project img {
+    max-height: 160px;
+    max-width: 160px;
+}
+
+#stepsProject:active,#stepsProject:focus,
+#questions:active,#questions:focus,#questions:hover,
+.topic-container:active,.topic-container:focus,.topic-container:hover{
+    border: 2px solid orange;
+    box-shadow: 0px 0px 3px 2px blue;
+}
+.project:active,.project:focus,.project:hover{
+    border: 3px solid blue;
+    box-shadow: 0px 0px 10px 2px orange;
+}
+
+
+
+footer {
+    margin-bottom: 500px;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: inline-block;
+}

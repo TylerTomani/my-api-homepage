@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medentSteps</title>
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/copy-code.css">
+    <link rel="stylesheet" href="css/medent-header.css"/>
+    <link rel="stylesheet" href="css/medent-main.css"/>
+    <link rel="stylesheet" href="css/imgVid.css"/>
+    <script src="js/home-link-focus.js" defer></script>
+    <script module src="js/stepPartDropFocus.js" defer></script>
+    <script module src="js/addTabIndex.js" defer></script>
+    <script src="../js/enlargeImg.js" defer></script>
+    <link rel="stylesheet" href="../css/imgAnimate.css">
+
+</head>
+<body>
+    <header>
+        <div class="fi home-link">
+            <a tabindex="1" href="../index.htm">home</a>
+        </div>
+        <div class="fi chatGpt-link ">
+            <a tabindex="1" target="_blank" href="../chatGpt-questions/chatGpt-questions.htm">chatGpt-questions</a>
+        </div>
+        <div class="fi page-title">
+            <h1>medentSteps</h1>
+            <div class="page-logo">
+                <img src="medent.png" alt="">
+                <a tabindex="1" target="_blank" href="https://www.youtube.com/watch?v=cCKPjW5JwKo&list=PL3JVwFmb_BnTamTxXbmlwpspYdpmaHdbz&index=3
+                ">tutorial</a>
+
+            </div>
+
+        </div>
+    </header>
+    <main>   
+        <!-- Documentation -->
+        <section tabindex="1" id="documentation" class="topic-container "  >
+            <header>
+                <h2>Documentation</h2>
+            </header>
+            <div class="topic ">
+                <p> These are the 4 documentations I have been working from</p>
+                <div class="documentation">
+                    <!-- Medent -->
+                    <div class="doc">
+                        <h3>medent api documentation</h3>
+                        <p>
+                            He are the two documentation from Medent I am working with
+                        </p>
+                        <ul>
+                            <li><a target="_blank" href="https://www.medent.com/mapi.pdf">https://www.medent.com/mapi.pdf</a></li>
+                            <li><a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc7591#section-3.1">https://datatracker.ietf.org/doc/html/rfc7591#section-3.1</a></li>
+                        </ul>
+                    </div>
+                    <!-- FHIR -->
+                    <div class="doc">
+                        <h3>hl7 FHIR Documentation </h3>
+                        <p>
+                        <span class="r">I'm not sure how to register api in FHIR?</span>
+                        </p>
+                        <ul>
+                            <li><a  target="_blank" href="https://www.hl7.org/fhir/documentation.html">https://www.hl7.org/fhir/documentation.html</a></li>
+                        </ul>
+                        <p>
+                            This is the FHIR docmentation I found on cloud.google.com
+                        </p>
+                        <ul>
+                            <li><a target="_blank" href="https://cloud.google.com/healthcare-api/docs/concepts/fhir#:~:text=Fast%20Healthcare%20Interoperability%20Resources%20(FHIR,electronic%20health%20records%20(EHR).">cloud.google.com (FHIR)</a></li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+        </section>  
+  
+        <!-- Part 1 Usage Summary -->
+        <div class="part">
+            <a autofocus  id="part01" tabindex="1" href="#" class="dropPart"><h2>Part 1 - Usage Summary </h2>
+             https://www.medent.com/mapi.pdf</a>
+            <div class="steps-container show">
+                <div class="step-col">
+                    <div  tabindex="1" class="step-txt">
+                        <a target="_blank" href="https://www.medent.com/mapi.pdf">https://www.medent.com/mapi.pdf</a>
+                        <h3>Usage Summary:</h3>
+                        <ul>
+                            <li>1. <strong>Dynamic Application Registration:</strong> Obtain a MEDENT API
+                                registration ID from: <a target="_blank" href="https://www.medentmobile.com/mapi/register/
+                                "> https://medentmobile.com/mapi/register/</a></li>
+                            <li>2. <strong>MEDENT Point of Care ID Acquisition:</strong> Use API to obtain list of MEDENT Point of Care (POC) IDs.</li>
+                            <li>3. <strong>MEDENT Portal Credential Acquisition:</strong> Obtain MEDENT Portal credentials from Patients per
+                                MEDENT POC location.</li>
+                            <li>4. <strong>Patient Token Acquisition:</strong> Use API to obtain a patient token for given MEDENT Portal credentials and
+                                POC ID</li>
+                            <li>5. <strong>Data Queries using Patient Token:</strong> Use patient token to obtain API supported patient data elements</li>
+                        </ul>
+                    </div>  
+                </div>
+                <!-- 01 -->
+                <div class="step">
+                    <div id="step0101" tabindex="1" class="step-txt">
+                        <h3>01</h3>
+                        <p><a target="_blank" href="https://www.medent.com/mapi.pdf">https://www.medent.com/mapi.pdf</a></p>
+                        <pre>
+                            _________________________________________________________________________
+    1. <strong>Dynamic Application Registration:</strong>
+    All entities that wish to use the MEDENT API must first obtain a registration ID. Registration is automated.
+    Registration IDs can be used immediately. All MEDENT API POST transactions must contain a valid
+    registration ID. Registration is only required once.
+    To obtain a registration ID:
+    1. Fill out form at: <a href="https://medentmobile.com/mapi/register/">https://medentmobile.com/mapi/register/</a>
+    2. Once form is successfully submitted the registration ID will be emailed to the address entered on the
+    form
+                        </pre>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/01-01a.png" >
+                    </div>
+                </div>
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <p>
+                           I did this, received this email and saved info to file in project 
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/01-01b.png" >
+                    </div>
+                </div>
+                <!-- 02 -->
+                <div class="step">
+                    <div id="step0102" tabindex="1" class="step-txt">
+                        <h3>02</h3>
+                        <pre>
+                            _________________________________________________________________________
+2. <strong>MEDENT Point of Care ID Acquisition:</strong>
+To obtain the Medent affiliated POC locations POST to:
+https://www.medentmobile.com/mapi/services/pocquery.php
+Form parameters:
+registration_id: string (required) - A valid MEDENT API application registration ID (see section above:
+Dynamic Application Registration)
+
+                        </pre>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/01-02.png" >
+                    </div>
+                </div>
+                
+                <!-- 03 -->
+                <div class="step">
+                    <div id="step0103" tabindex="1" class="step-txt">
+                        <h3>03</h3>
+                        <p>
+                            <a href="#">dfdkj</a>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <!-- <img src="imagesVideos" > -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- Step 2 - put files into "Random Files" Folder on drive -->
+        <div class="part">
+            <a id="02" tabindex="1" href="#" class="dropPart"><h2>Part 2 - TBD</h2></a>
+            <div class="steps-container">
+                <div class="step">
+                    <div id="step0201" tabindex="1" class="step-txt">
+                        <h3>01</h3>
+                        <p>
+                            
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <!-- <img src="imagesVideos" > -->
+                    </div>
+                </div>
+                <div class="step-col">
+                    <div id="step0202" tabindex="1" class="step-txt">
+                        <h3>02</h3>
+                        <p>
+                            
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <!-- <img src="imagesVideos" > -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+ 
+    </main>
+    
+</body>
+</html>

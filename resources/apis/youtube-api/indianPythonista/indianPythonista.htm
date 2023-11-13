@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indianPythonista</title>
+    <link rel="stylesheet" href="../css/tutorial-header-temp.css">
+    <link rel="stylesheet" href="../css/tutorial-main-temp.css">
+    <link rel="stylesheet" href="../css/copy-code.css">
+    <link rel="stylesheet" href="../css/imgAnimate.css">
+    <link rel="stylesheet" href="../css/colors.css">
+
+    <script src="../js/drop-topics.js" defer></script>
+    <script src="../js/playEnlargeVideos.js" defer></script>
+    <script src="../js/copy-code.js" defer></script>
+    <script module src="../js/enlarge-code-img.js" defer></script>
+    <script module src="../js/addTabIndex.js" defer></script>
+    <script module src="../js/stepFocus.js" defer></script>
+    <script  src="../../../../js/home-link-focus.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="home-link">
+            <a tabindex="1" href="../index.htm">home</a>
+        </div>
+        <div class="page-title">
+            <h1 class="title">indianPythonista</h1>
+            <h3><a target="_blank" href="https://www.youtube.com/watch?v=TE66McLMMEw">tutorial</a></h3>
+        </div>
+        <div class="img-logo-container">
+            <img class="img-logo" src="data:image/jpeg;base64,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
+            " alt="">
+        </div>
+    </header>
+    <main>
+        <!-- Part 1 -->
+        <div class="topic-container">
+            <header>
+                <div class="title-container">
+                    <h2><a tabindex="1" href="#" class="drop-topic title">Part 1 </a></h2>
+                </div>
+                <div class="img-container">
+                    <img src="data:image/png;base64,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
+                    " alt="">
+                </div>
+            </header>
+            <div class="steps-container  ">
+            <!-- 00 - setup jupyter in windows -->
+                <div  class="step ">
+                    <div tabindex="1" class="enlarge-playVid-click text-container">
+                        <h3 >00 - setup jupyter in windows</h3>
+                        <p>
+                            Examples in these tutorials are done in <code>jupyter</code>.
+                            <br><span class="r">**remember</span> - add the path to 
+                            <code>python</code> and <code>python\Scripts</code> folder to 
+                            the <code>Enviroement variable</code>. 
+                            <br>
+                            Good tutorial -  <a target="_blank"  href="https://www.youtube.com/watch?v=J_Cvx8J2DuY
+                            ">Learn at Knowstar - How to Install Python and Jupyter Notebook on Windows
+                            </a>
+                            <br>,
+                            see how to install and use <code>jupyter</code>
+                        </p>
+                        <p>
+                            Open the <i>Edit the Enviroment Variables </i>
+                        </p>
+                        <p>
+                            Copy and paste these two paths into <i>New</i> Path variables
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code">
+C:\Users\mtoma\AppData\Local\Programs\Python\Python311</pre>	
+                        </div>
+                        <div class="code-container">
+                            <pre class="copy-code">
+C:\Users\mtoma\AppData\Local\Programs\Python\Python311\Scripts</pre>	
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Then go to 
+                            <br>Settings -> Apps -> Apps & Features > App execution aliases
+                            <br> and turn in off for both?? <span class="r">I don't need to do this, jupyter works</span>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            <!-- 01 - create vevn  -->
+                <div class="fc step">
+                    <div tabindex="1" class="fi fcol enlarge-img-click text-container">
+                        <h3>01 - create vevn </h3>
+                        <p>
+                            Install
+                        </p>
+                        <div class="code-container">
+                            <pre  class="copy-code">
+pip install google-api-python-client</pre>
+                        </div>
+                        <p>
+                            Create a <code>venv</code> in the same directory as jupyter? i think it matters
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code">
+python -m venv venv</pre>	
+                        </div>
+                    </div>
+                    <div class="fi img-container">
+                        <!-- <img src="imagesVideos/"></img> -->
+                    </div>
+                </div>
+            <!-- 02 - current api key -->
+                <div class="fc step">
+                    <div tabindex="1" class="fi fcol enlarge-img-click text-container">
+                        <h3>02 - current api key</h3>
+                        <p>
+                            <span class="r">** I can't get api working in jupyter</span>
+                            just do these examples in vs code for now
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code">
+from googleapiclient.discovery import build
+api_key = 'AIzaSyDoVmGn11RbYZEIaFIuvCpLumzBeyvDmWM'</pre>	
+                        </div>
+                        <p>
+                            Basic <code></code>
+                            
+                            query                            
+                        </p>
+                        <div class="code-container">
+                            <pre  class="copy-code">
+from googleapiclient.discovery import build
+api_key = 'AIzaSyDoVmGn11RbYZEIaFIuvCpLumzBeyvDmWM'
+
+youtube = build('youtube','v3',developerKey=api_key)
+req = youtube.search().list(
+    q='Indian Pythonista',
+    part='snippet',
+    type='channel'
+    )
+response = req.execute()
+
+
+print(response['items'][0])</pre>
+                        </div>
+                    </div>
+                    <div class="fi img-container">
+                        <img src="part1/imagesVideos/00.png"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Part 2 -->
+        <div class="topic-container">
+            <header>
+                <div class="title-container">
+                    <h2><a tabindex="1" href="#" class="drop-topic title">Part 2 </a></h2>
+                </div>
+                <div class="img-container">
+                    <img src="data:image/png;base64,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
+                    " alt="">
+                </div>
+            </header>
+            <div class="steps-container  ">
+            <!-- type(request) -->
+                <div  class="step ">
+                    <div  tabindex="1" class="enlarge-playVid-click text-container">
+                        <h3 >00 - <code>type(<span class="request">request</span>)</code></h3>
+                        <p>
+                            The <code class="request">request</code> returns a <code>HttpRequest</code> class
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code">
+from googleapiclient.discovery import build
+api_key = 'AIzaSyDoVmGn11RbYZEIaFIuvCpLumzBeyvDmWM'
+
+youtube = build('youtube','v3',developerKey=api_key)
+<span class="request">request</span> = youtube.search().list(
+    q='Indian Pythonista',
+    part='snippet',
+    type='channel'
+    )
+print(type(<span class="request">request</span>))</pre>	
+                        </div>
+                        
+                    </div>
+                    <div class="img-container">
+                        <img src="part2/imagesVideos/00.png"alt="">
+                    </div>
+                </div>
+            <!-- type(response) -->
+                <div class="fc step">
+                    <div tabindex="1" class="fi fcol enlarge-img-click text-container">
+                        <p>
+                            Use <code><span class="g">execute</span>()</code> on <code class="request">request</code> 
+                            and place it into a <code class="m">response</code> variable. 
+                            <br>
+                            The <code class="m">response</code> variable will be a <code class="ou2">JSON</code> string but type will show
+                            <code class="r">dict</code> 
+                        </p>
+                        <div class="code-container">
+                            <pre  class="copy-code">
+from googleapiclient.discovery import build
+api_key = 'AIzaSyDoVmGn11RbYZEIaFIuvCpLumzBeyvDmWM'
+
+youtube = build('youtube','v3',developerKey=api_key)
+request = youtube.search().list(
+    q='Indian Pythonista',
+    part='snippet',
+    type='channel'
+    )
+<span class="m">response</span> = <span class="request">request</span>.<span class="g">execute</span>()
+print(response)
+print(type(<span class="m">response</span>))</pre>
+                        </div>
+                    </div>
+                    <div class="fi img-container">
+                        <img src="part2/imagesVideos/01.png"></img>
+                    </div>
+                </div>
+            <!-- for item in response: -->
+                <div class="fc step">
+                    <div tabindex="1" class="fi fcol enlarge-img-click text-container">
+                        <p>
+                            By default, the <code><span class="search">search</span>()</code> method 
+                            returns 5 items in <code>JSON</code> and each item has 5 keys:
+                        </p>
+                        
+                        <ul>
+                            <li><code class="m">kind</code></li>
+                            <li><code class="m">etag</code></li>
+                            <li><code class="m">regionCode</code></li>
+                            <li><code class="m">pageInfo</code></li>
+                            <li><code class="o">items</code></li>
+                        </ul>
+                        <div class="code-container">
+                            <pre  class="copy-code">
+for item in response:
+print(item)</pre>
+                        </div>
+                        <p>
+                            The first <code>'kind'</code> is <code class="r">#SearchListResponse</code>, and 
+                            nested within its <code>'items'</code> key is another <code>'kind'</code> <code class="cfb">searchResult</code>.
+                            <br>
+                            The search result items are contained within the <code class="o">'items'</code> key
+                        </p>
+                    </div>
+                    <div class="fi img-container">
+                        <img src="part2//imagesVideos/02.png"></img>
+                    </div>
+                </div>
+            <!-- json -->
+                <div class="fc step">
+                    <div tabindex="1" class="fi fcol enlarge-playVid-click text-container">
+                        <p>
+                            We can see this more clearly by wrting the response into a file or importing the 
+                            <code class="cfb">json</code> library and using the <code><span class="m">dumps</span>()</code> 
+                            method.
+                            <br>Or use a third party program like,
+                            <br>
+                            <a target="_blank" href="https://www.postman.com/">Postman</a>
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code">
+import <span class="cfb">json</span>
+from googleapiclient.discovery import build
+api_key = 'AIzaSyDoVmGn11RbYZEIaFIuvCpLumzBeyvDmWM'
+youtube = build('youtube','v3',developerKey=api_key)
+
+request = youtube.search().list(
+    q='Indian Pythonista',
+    part='snippet',
+    type='channel'
+)
+response = request.execute()
+json_str = <span class="cfb">json</span>.<span class="m">dumps</span>(response, indent=4)
+with open('json_file.json','w') as f:
+    f.write(json_str)</pre>
+                        </div>
+                        <p>
+                            Notice how the response <code><q>items</q></code> contains a <code><q>title</q></code>
+                            key, with values matching the words <q>Indian Pythonista</q> and close
+                        </p>
+                    </div>
+                    <div class="fi video-container">
+                        <video src="part2/imagesVideos/04.mp4"></video>
+                    </div>
+                </div>
+            <!-- for item in response['items'][0] -->
+                <div class="fc step">
+                    <div tabindex="1" class="fi fcol enlarge-playVid-click text-container">
+                        <p>
+                            We can see the first <code><q>item</q></code> with the following.
+                        </p>
+                        
+                        <div class="code-container">
+                            <pre  class="copy-code">
+from googleapiclient.discovery import build
+api_key = 'AIzaSyDoVmGn11RbYZEIaFIuvCpLumzBeyvDmWM'
+youtube = build('youtube','v3', developerKey=api_key)
+request = youtube.search().list(
+    q='avengers',
+    part='snippet',
+    type='<span class="o">video</span>'
+)
+response = request.execute()
+with open('json_file.json','w') as f:
+    json_str = json.dumps(response['item'][0], indent=2)
+    f.write(json_str)
+</pre>
+                        </div>
+                    </div>
+                    <div class="fi video-container">
+                        <video src="part2/imagesVideos/05.mp4"></video>
+                    </div>
+                </div>
+
+                <div class="fc step">
+                    <div tabindex="1" class="fi fcol enlarge-playVid-click text-container">
+                        <p>  
+                            Now we can index nested json within <code>response['items']</code> and extract 
+                            values from nested key. <span class="r">**Important note</span>
+                            <code class="r">len()</code> to see the length of the result.
+                            <br>By default it is 5, add the <code class="m">maxResults</code> parameter to 
+                            <code>list()</code>, the max value is 50
+                          
+                        </p>
+                        <div class="code-container">
+                            <pre  class="copy-code">
+import json
+from googleapiclient.discovery import build
+api_key = 'AIzaSyDoVmGn11RbYZEIaFIuvCpLumzBeyvDmWM'
+
+youtube = build('youtube','v3', developerKey=api_key)
+
+request = youtube.search().list(
+    <span class="m">maxResults</span>=25,
+    q='avengers',
+    part='snippet',
+    type='<span class="cfb">video</span>'
+)
+response = request.execute()
+with open('json_file.json','w') as f:
+    for item in response['items']:
+        json_str = json.dumps(item, indent=2)
+        f.write(json_str)
+print(len(response['items']))</pre>
+                        </div>
+                        <p>
+                            The example above uses the type <code><span class="cfb">video</span></code>
+                            method and searchs for 25 videos containing title that include <q>avengers</q>
+                        </p>
+                    </div>
+                    <div class="fi video-container">
+                        <video src="part2/imagesVideos/06.mp4"></video>
+                    </div>
+                </div>
+                <!-- Last example show each title of search result -->
+                <div class="fc step">
+                    <div tabindex="1" class="fi fcol enlarge-img-click text-container">
+                        <p>
+                            Last example show each title of search result
+                        </p>
+                        <div class="code-container">
+                            <pre  class="copy-code">
+from googleapiclient.discovery import build
+api_key = 'AIzaSyDoVmGn11RbYZEIaFIuvCpLumzBeyvDmWM'
+
+youtube = build('youtube','v3', developerKey=api_key)
+
+request = youtube.search().list(
+    maxResults=25,
+    q='avengers',
+    part='snippet',
+    type='video'
+    )
+    
+response = request.execute()
+with open('json_file.json', 'w', <span class="r">encoding='utf-8'</span> ) as f:
+    for item in response['items']:
+        title = item['snippet']['title']
+        f.write(title + '\n')
+                                </pre>
+                        </div>
+                        <p>
+                            <span class="r">encoding='utf-8'</span> fixed the error i was receving
+                        </p>
+                     </div>
+                    <div class="fi img-container">
+                        <img src="part2/imagesVideos/"></img>
+                    </div>
+                 </div>
+                    <!-- end of steps-container -->
+            </div>
+        </div> 
+    </main>
+    
+</body>
+</html>

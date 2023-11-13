@@ -1,0 +1,439 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-01_tutor</title>
+    <link rel="stylesheet" href="../../css/flex-questions.css"/>
+    <link rel="stylesheet" href="../../css/imgVid.css"/>
+    <link rel="stylesheet" href="../../css/tutorial.css"/>
+    <link rel="stylesheet" href="../../../../css/colors.css">
+    <link rel="stylesheet" href="../../../../../../css//copy-code.css">
+    <script module src="../../../../../../js/home-link-focus.js" defer></script>
+    <script module src="../../../../../../js/copy-code.js" defer></script>
+    <script module src="../../js/letterFocus.js" defer></script>
+    <script module src="../../js/stepFocusEnlargeImg.js" defer></script>
+    <script module src="../../js/dropPartFocus.js" defer></script>
+    <script module src="../../js/playEnlargeVid.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="fi home-link">
+            <a tabindex="1" href="../../apis.htm">home&nbsp;-&nbsp;apis</a>
+        </div>
+        <div class="page-title">
+            <h1>02-01- Tutor - Google Drive API in Python (playlist)</h1>
+            <div class="page-logo">
+                <img src="../varsityTutors.png" alt="">
+                <a tabindex="1" target="_blank" href="https://www.youtube.com/watch?v=9K2P2bWEd90&list=PL3JVwFmb_BnTamTxXbmlwpspYdpmaHdbz
+                ">tutorial</a>
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+    
+        <!-- Step 1 - Create the project -->
+        <div class="part">
+            <a id="steps01" tabindex="1" href="#" class="dropPart"><h2>Step 1 - Create New project</h2></a>
+            <div class="steps-container ">  
+                <!-- 01 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>01</h3>
+                        <p>
+                            Go to
+                            <a target="_blank" href="https://console.cloud.google.com/projectselector2/home/dashboard?organizationId=0&supportedpurview=project
+                            ">console.cloud.google.com/</a> 
+                            and click <q class="b">NEW PROJECT</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/01-01.png" alt="">
+                    </div>
+                </div>
+
+                <!-- 02  -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>02</h3>
+                        <p>
+                            Name it <q>myGoogleDriveApi</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/01-02.png" >
+                    </div>
+                </div>
+                <!-- 03  -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>03</h3>
+                        <p>
+                            Select it from the project drop down list
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/01-03.png" >
+                    </div>
+                </div>
+                <!-- 04  -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>04</h3>
+                        <p>
+                            Go to the top left menu, navigate to
+                            <br>
+                            <q>APIs & Services</q> &rarr; <q>Library</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/01-04.png" >
+                    </div>
+                </div>
+                <!-- 05 -->
+                <div class="step">
+                    <div tabindex="1" class="step-vid playVid-click">
+                        <h3>05</h3>
+                        <p>
+                            Search for and Enable the <q>Google Drive Api</q>
+                        </p>
+                    </div>
+                    <div class="step-vid">
+                        <video src="imagesVideos/01-05.mp4" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Step 2 - Authentification OAuth Documentation -->
+        <div class="part">
+            <a id="steps02" tabindex="1" href="#" class="dropPart"><h2>Step 2 - Create Credential OAuth 2.0</h2></a>
+            <div class="steps-container  ">
+                <!-- 01 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt ">
+                        <h3>01</h3>
+                        <p>
+                            Go to <a target="_blank" href="
+                            " >
+                              </a>
+                              <br>
+                              <q>APIs & Services</q> &rarr; <q>Credentials</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/02-01.png" >
+                    </div>
+                </div>
+                <!-- 02   -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>02</h3>
+                        <p>
+                            click <q class="b">CREATE CREDENTIALS</q> &rarr; <q>OAuth client ID</q> 
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/02-02.png" >
+                    </div>
+                </div>
+                <!-- 03 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt ">
+                        <h3>03</h3>
+                        <p>
+                            Click <q class="b">CONFIGURE CONSENT SCREEN</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/02-03.png" >
+                    </div>
+                </div>
+                <!-- 04 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>04</h3>
+                        <p>
+                            Choose <strong><q>External</q></strong>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/02-04.png" >
+                    </div>
+                </div>   
+                <!-- 05 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>05</h3>
+                        <p>
+                            Name the app <q>myGoogleDriveApi-App</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/02-05.png" >
+                    </div>
+                </div>
+                <!-- 06 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>06</h3>
+                        <p>
+                            Download the json to the same directory as your script
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/02-06.png" >
+                    </div>
+                </div>
+                <!-- 07 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>07</h3>
+                        <p>
+                            I saved it to a directory on my folder named <q>myGoogleDriveApi</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/02-07.png" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3 - Go to OAUTH Consent Screen  -->
+        <div class="part">
+            <a id="step03" tabindex="1" href="#" class="dropPart obshadow"><h2>Step 3 - Go to OAuth Consent Screen </h2></a>
+            <div class="steps-container ">
+                <!-- 01 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt ">
+                        <h3>01</h3>
+                        <p>
+                            Go to 
+                            <q>APIs & Services</q> &rarr; <q>OAuth consent screen</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/03-01.png" >
+                    </div>
+                </div>
+                <!-- 02 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>02</h3>
+                        <p>
+                            Click on <q class="b">EDIT APP</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/03-02.png" >
+                    </div>
+                </div>
+                <!-- 03 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt step-vid playVid-click">
+                        <h3>03</h3>
+                        <p>
+                            Scroll down and click <q>SAVE AND CONTINUE</q>
+                        </p>
+                    </div>
+                    <div class="step-vid">
+
+                        <video src="imagesVideos/03-03.mp4" >
+                    </div>
+                </div> 
+                <!-- 04   -->
+                <div class="step">
+                    <div tabindex="1" class=" step-txt step-vid playVid-click">
+                        <h3>04</h3>
+                        <p>
+                            Add the scope
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code">
+https://www.googleapis.com/auth/drive</pre>	
+                        </div>
+                    </div>
+                    <div class="step-vid">
+                        <video src="imagesVideos/03-05.mp4" >
+                    </div>
+                </div>
+                <!-- 05 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>05</h3>
+                        <p>
+                            Click <q class="b">SAVE AND CONTINUE</q>
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/03-05.mp4" >
+                    </div>
+                </div>
+                <!-- 06 -->
+                <div class="step">
+                    <div tabindex="1" class="step-vid playVid-click rbshadow">
+                        <h3>06</h3>
+                        <p>
+                            Add your email as <q>Test Users</q>
+                            <p class="r">I hope this works</p>
+                        </p>
+                    </div>
+                    <div class="step-vid">
+                        <video src="imagesVideos/03-06.mp4" >
+                    </div>
+                </div>
+        
+
+            </div>
+        </div>
+        <!-- Step 4 - Recreate Project and OAUTH Credential -->
+        <div class="part">
+            <a id="step04" tabindex="1" href="#" class="dropPart"><h2>Step 4 - Set up Script</h2></a>
+            <div class="steps-container ">
+      
+                <!-- 01   -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>01</h3>
+                        <p>
+                            He uses the following script inside the same direcotry it create request
+                            <br> name it GooglePy.py
+                        </p>
+                        <p>
+                            copy and paste the script above in the same directory as your 
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code mdtxt full-width">
+import pickle
+import os
+from google_auth_oauthlib.flow import Flow, InstalledAppFlow
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
+from google.auth.transport.requests import Request
+                            
+def Create_Service(client_secret_file, api_name, api_version, *scopes):
+print(client_secret_file, api_name, api_version, scopes, sep='-')
+CLIENT_SECRET_FILE = client_secret_file
+API_SERVICE_NAME = api_name
+API_VERSION = api_version
+SCOPES = [scope for scope in scopes[0]]
+print(SCOPES)
+
+cred = None
+
+pickle_file = f'token_{API_SERVICE_NAME}_{API_VERSION}.pickle'
+# print(pickle_file)
+
+if os.path.exists(pickle_file):
+    with open(pickle_file, 'rb') as token:
+        cred = pickle.load(token)
+
+if not cred or not cred.valid:
+    if cred and cred.expired and cred.refresh_token:
+        cred.refresh(Request())
+    else:
+        flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRET_FILE, SCOPES)
+        cred = flow.run_local_server()
+
+    with open(pickle_file, 'wb') as token:
+        pickle.dump(cred, token)
+
+try:
+    service = build(API_SERVICE_NAME, API_VERSION, credentials=cred)
+        print(API_SERVICE_NAME, 'service created successfully')
+        return service
+    except Exception as e:
+        print('Unable to connect.')
+        print(e)
+        return None
+
+def convert_to_RFC_datetime(year=1900, month=1, day=1, hour=0, minute=0):
+    dt = datetime.datetime(year, month, day, hour, minute, 0).isoformat() + 'Z'
+    return dt    </pre>	
+                        </div>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/04-01.png" >
+                    </div>
+                </div>
+
+                <!-- 02 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt ">
+                        <h3>02</h3>
+                        <p>
+                            don't forget to create a venv and install 
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code">
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib</pre>	
+                        </div>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/05-02.png" >
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>03</h3>
+                        <p>
+                            add this script to the script.py in same directory then run this script
+                        </p>
+                        <div class="code-container">
+                            <pre class="copy-code">
+from google import Create_Service
+
+CLIENT_SECRET_FILE = 'client_secret.json'
+API_NAME = 'drive'
+API_VERSION = 'v3'
+SCOPES = ['https://www.googleapis.com/auth/drive']
+
+Create_Service(CLIENT_SECRET_FILE,API_NAME,API_VERSION,SCOPES)</pre>	
+                        </div>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/04-03.png" >
+                    </div>
+                </div>
+                <!-- 04 -->
+                <div class="step">
+                    <div tabindex="1" class="step-txt">
+                        <h3>04</h3>
+                        <p>
+                            This screen should appear after running the script
+                        </p>
+                    </div>
+                    <div class="step-img">
+                        <img src="imagesVideos/04-04.png" >
+                    </div>
+                </div>
+                <!-- 05 -->
+                <div class="step-col">
+                    <div tabindex="1" class="step-txt">
+                        <h3>05</h3>
+                        <p>
+                            Now it is done and ready to use
+                        </p>
+                    </div>
+                    <div class="img-2-container">
+
+                        <div class="step-img">
+                            <img class="img-l" src="imagesVideos/04-05.png" >
+                        </div>
+                        <div class="step-img">
+                            <img class="img-r" src="imagesVideos/04-05b.png" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer tabindex="1" id="part06"></footer>
+ 
+    </main>
+    
+</body>
+</html>

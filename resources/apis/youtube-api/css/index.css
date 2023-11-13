@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+ header {
+    display: flex;
+ }
+
+ header > .shortcut-container  {
+    margin-left: 5%;
+ }
+ .shortcuts-container {
+    display: flex;
+    /* flex-direction: column; */
+ }
+ header > .shortcut-container,
+ .shortcuts-container > .shortcut-container {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    border: 1px solid blue;
+    padding: .25% 2.5%;
+    overflow-y: scroll;
+    max-height: 100px;
+ }
+ .shortcut-container > ul {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 2.5%;
+ }
+.shortcut-container > ul > li > ul {
+    margin-left: 5%;
+}
+.shortcut-container > ul > li > ul > li{
+    font-family: monospace;
+    list-style-type: none;
+    font-size: 1.05rem;
+    padding: .25%;
+}
+#cmdPromptCommands {
+    border-top: 3px solid black;
+    
+}
+main {
+   padding: 2.5%;
+   display: flex;
+   flex-direction: column;
+   border: 2px dashed blue;
+   margin: 5%;
+}
+.projects-container {
+   display: flex;
+   gap: 1rem;
+}
+.projects-container > .project-container{
+   border: 3px solid red;
+   flex-basis: 30%;
+   padding: 2.5%;
+}
+.project-container,
+.tutorial-container  {
+   display: flex;
+}
+.project-container > .fi,
+.tutorial-container > .fi {
+   /* flex-basis: 40%; */
+   display: flex;
+   justify-content: center;
+}
+.project-container > .fi.txt-container,
+.tutorial-container > .fi.txt-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+.project-container > .fi > img,
+.tutorial-container > .fi > img {
+   width: 100%;
+}
+#chatGptQuestions {
+   font-size: 2rem;
+   flex-basis: 50%;
+}

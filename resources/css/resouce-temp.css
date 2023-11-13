@@ -1,0 +1,93 @@
+* {
+    margin:0; 
+    padding:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+    margin: 0 2.5%;
+    padding: 0 2.5%;
+    padding-left: 0;
+}
+main > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subject-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+.subject-container > .subject-header {
+    display: flex;
+}
+.subject-container > .subject-header > .subject {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* padding: 0 2.5%; */
+}
+.subject-container > .subject-header > .subject > img {
+    width: 10%;
+}
+.subject-container > .subject-tutorials-container{
+    border: 2px solid black;
+    border-top: 0;
+    border-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.subject-container > .subject-tutorials-container > .tutorial {
+
+    border: 1px solid blue;
+}
+.subject-container > .subject-tutorials-container > .playlist-container{
+    flex-basis: 33.3%;
+}
+
+.playlist-container > header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 0;
+}
+.playlist-container > header > h2{
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+}
+.playlist-container > header > img{
+    width: 60%;
+    max-width: 200px;
+    max-height: 124px;
+    margin-left: 5%;
+}
+.playlist-container > .tutorials-container {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.playlist-container > .playlist-tutorials-container > .tutorial > h2 {
+    font-size: 1.1rem;
+}
+.playlist-container > .playlist-tutorials-container > .tutorial > img {
+    width: 50%;
+    margin: 0 2.5%;
+}
+
+
+.subject:active,.subject:focus,.subject:hover,
+.project:active,.project:focus,.project:hover,
+.playlist-container:active,.playlist-container:focus,.playlist-container:hover,
+.tutorial:active,.tutorial:focus,.tutorial:hover{
+    border: 3px solid blue;
+    box-shadow: 0px 0px 6px 4px orange;
+}
+
+.hide {
+    display: none !important;
+}
+.show {
+    display: inline-flex !important;
+}

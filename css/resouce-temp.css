@@ -19,8 +19,10 @@ main > header {
     flex-direction: column;
     border-bottom: 1px solid black;
 }
-.subject-container > .subject-header {
+.subject-container > header {
     display: flex;
+    white-space: none;
+    flex-wrap: wrap;
 }
 .subject-container > .subject-header > .subject {
     width: 100%;
@@ -30,6 +32,7 @@ main > header {
 }
 .subject-container > .subject-header > .subject > img {
     width: 10%;
+    align-self: flex-end;
 }
 .subject-container > .subject-tutorials-container{
     border: 2px solid black;
@@ -42,6 +45,7 @@ main > header {
 .subject-container > .subject-tutorials-container > .playlist-container{
     flex-basis: 33.3%;
 }
+
 
 .playlist-container > header{
     display: flex;
@@ -66,8 +70,12 @@ main > header {
     gap: 1rem;
 }
 .playlist-container > header{
-
+    display: flex;
+    white-space: none;
+    padding:0 2.5%;
     border: 1px solid black;
+}
+.playlist-container > .playlist-tutorials-container {
 }
 .playlist-container > .playlist-tutorials-container > .tutorial {
     border: 1px solid blue;

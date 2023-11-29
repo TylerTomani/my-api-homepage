@@ -150,6 +150,7 @@ body > header > .page-title >  img{
 }
 .part > .steps-container > .step > .step-vid > video {
     border: 3px solid black;
+    min-width: 250px;
 }
 .part > .steps-container > .step > .step-txt,
 .part > .steps-container > .step > .step-img,
@@ -220,5 +221,6 @@ footer {
 .code-container {
     margin: 1.5% 0;
     width: 100%;
+    max-height: 400px;
 }
 /* .FHIR Maturiy model */

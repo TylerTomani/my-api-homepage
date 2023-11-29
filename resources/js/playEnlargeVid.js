@@ -1,6 +1,7 @@
 const playVidClicks = document.querySelectorAll('.playVid-click')
 const videos = document.querySelectorAll('video')
 
+console.log('hhhh')
 playVidClicks.forEach(playVidClick => {
     playVidClick.addEventListener('click', e => {
         enlargeVid(e)
@@ -12,6 +13,16 @@ playVidClicks.forEach(playVidClick => {
     })
     playVidClick.addEventListener('focusout', e => {
         delargeAllVideo()
+    })
+})
+
+videos.forEach(vid => {
+    vid.addEventListener('click', e => {
+        if(!e.target.classList.contains('enlarge-vid')){
+            e.target.classList.add('enlarge-vid')
+        } else {
+            e.target.classList.remove('enlarge-vid')
+        }
     })
 })
 
